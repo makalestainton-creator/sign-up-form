@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="left-section">
+        <img
+          src="images/background.jpg"
+          alt="distant mountain range under a cloudy, pastel sky"
+        />
+        <div class="logo-overlay">
+          <img src="images/odin.svg" alt="odin-logo" class="odin-logo" />
+          <p>ODIN</p>
+        </div>
+        <p class="credit">
+          Photo by
+          <a
+            href="https://unsplash.com/@vegfrt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Aliaksei Lepik</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/distant-mountain-range-under-a-cloudy-pastel-sky-lRTIVck4ffE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </p>
+      </section>
+      <section class="right-section">
+        <p class="intro">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <p class="intro">You <em>know</em> you want to.</p>
+        <div class="form">
+          <h4>Please fill all fields marked as * (required)</h4>
+          <form>
+            <div class="form-grid">
+              <div class="left">
+                <div class="form-row">
+                  <label for="first-name"
+                    >First Name:<span class="required">*</span></label
+                  >
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    required
+                    autocomplete="additional-name"
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="last-name">Last Name:</label>
+                  <input type="text" name="last-name" id="last-name" />
+                </div>
+                <div class="form-row">
+                  <label for="email"
+                    >E-mail:<span class="required">*</span></label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                    required
+                    autocomplete="additional-name"
+                  />
+                </div>
+              </div>
+              <div class="right">
+                <div class="form-row">
+                  <label for="phone-number"
+                    >Phone Number:<span class="required">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    name="phone-number"
+                    id="phone-number"
+                    placeholder="+2543 93 646 805"
+                    required
+                  />
+                </div>
+                <div class="form-row">
+                  <label for="password"
+                    >Password:<span class="required">*</span></label
+                  >
+                  <input
+                    type="password"
+                    pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}"
+                    name="password"
+                    id="password"
+                    required
+                    minlength="8"
+                    maxlength="12"
+                  />
+                  <div class="password-requirements">
+                    <p>Should include:</p>
+                    <ul>
+                      <li>uppercase alphabet</li>
+                      <li>lowercase alphabet</li>
+                      <li>special characters</li>
+                      <li>at least 8 characters</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label for="confirm-password"
+                    >Confirm Password:<span class="required">*</span></label
+                  >
+                  <input
+                    type="password"
+                    pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,}"
+                    name="confirm-password"
+                    id="confirm-password"
+                    required
+                    minlength="8"
+                    maxlength="12"
+                  />
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="submit">Create Account</button>
+          </form>
+        </div>
+        <p class="log-in">Already have an account? <a href="#">Log in</a></p>
+      </section>
+    </main>
+  </body>
+</html>
